@@ -1,0 +1,9 @@
+[package]
+name = "secondary-cursor-repro"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.94.1"
+
+[dependencies]
+mongodb = { version = "=3.10.2", features = ["dns-resolver"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time"] }
